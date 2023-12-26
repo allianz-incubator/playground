@@ -1,0 +1,102 @@
+# This template demonstrates a potential bug report form. Please update all TODO marked places and remove the instructions afterwards.
+#
+# Additional information:
+# * Allianz OSPO: TODO URL
+# * Example: https://github.com/tensorflow/tensorflow/blob/master/.github/ISSUE_TEMPLATE/tensorflow_issue_template.yaml
+
+## Bug Report Issue Template
+name: 🐞 Report a bug
+description: Submit an issue or bug with the project
+title: "[Bug] <title>"
+labels: ["bug", "triage"]
+body:
+
+  ## Introduction 
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+ 
+  ## Bug Description 
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Description
+      description: |
+        Briefly describe the problem you are having.
+      placeholder: |
+        1. Problem
+        2. Current Beharior
+        3. Expected Behavior     
+    validations:
+      required: false                
+  
+  ## Steps to Reproduce - TODO remove if not needed
+  - type: textarea
+    id: bug-steps
+    attributes:
+     label: Steps to reproduce
+     description: Steps to reproduce the behavior.
+     placeholder: |
+       1. Go to '...'
+       2. Click on '....'
+       3. Scroll down to '....'
+       4. See error
+    validations:
+      required: false 
+  
+  ## Version - TODO remove if not needed
+  - type: input
+    id: bug-version
+    attributes:
+      label: Version
+      description: Which version of the software was used?
+      placeholder: v1.0
+    validations:
+      required: false
+  
+  ## Environment - TODO remove if not needed
+  - type: dropdown
+    id: bug-environment
+    attributes:
+      label: "Environment"
+      description: In which environment did the error occure ?
+      multiple: true
+      options:
+        - Windows
+        - Linux
+        - Mac
+    validations:
+      required: false
+      
+  ## Component - TODO remove if not needed
+  - type: checkboxes
+    id: component
+    attributes:
+      label: Components
+      description: In which component did the error occure ? (check all that apply)
+      options:
+       - label: "Website"
+       - label: "CLI"
+       - label: "Test" 
+   
+  ## Screenshot - TODO remove if not needed
+  - type: textarea
+    id: bug-screenshot
+    attributes:
+      label: "Screenshots"
+      description: If applicable, add screenshots to help explain your problem. **HINT:** You can drag and drop pictures to the text area.
+      placeholder: |
+        ![DESCRIPTION](LINK.png)
+    validations:
+      required: false
+
+  ## Error Logs - TODO remove if not needed
+  - type: textarea
+    id: bug-logs
+    attributes:
+      label: Error logs
+      description: Please provide any relevant logs / Output data. **HINT:** You can paste large files to https://gist.github.com
+      render: shell
+    validations:
+      required: false  
